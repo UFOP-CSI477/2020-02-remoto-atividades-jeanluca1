@@ -1,0 +1,21 @@
+table{width: 100%;
+
+}
+table, th,td{
+ border: 1px solid black;
+ border-collapse: collapse;
+
+}
+th,td{ padding: 9px;}
+caption{color: crimson; font-size: 16px; font-family: fantasy; font-weight: bold;}
+th{color: rgb(14, 28, 212); font-size: 14px; font-family: fantasy; }
+
+tbody tr:nth-child(even){ background-color: rgba(216, 70, 179, 0.932);}
+tbody tr:nth-child(odd){background-color: rgb(90, 72, 189);}
+tfoot{background-color: rgb(207, 78, 78);}
+thead tr:hover{background-color: rgb(141, 129, 129);font-weight: bold;}
+tbody tr:hover{background-color: rgb(41, 93, 189);}
+tfoot tr:hover{ background-color: darkkhaki;}
+
+.center{text-align: center;}
+tbody tr td { text-align: center;}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="br" dir=auto >
+<head>
+    <meta charset="UTF-8">
+    <style type="text/CSS">
+    
+    h1{color: rgb(40, 122, 7); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+            p{color: rgb(214, 87, 231);}
+            a{color: darkred; font-size: 25pt; background-color: rgb(75, 197, 85);  padding:8px ;}
+         a:hover{background-color: rgb(216, 162, 15); font-weight:bold;}
+         a:active{background-color: rgb(173, 52, 76); color: rgb(255, 255, 255);}
+        
+        .colr{color: rgb(101, 10, 129);font-size: 14pt; font-style: italic;}
+        .bordas{ display: flex;justify-content: center;}
+            .bordas div{ background-color: rgb(75, 197, 102) ; width: 200px; margin: 20px; line-height: 55px; text-align: center; border-radius: 20px;; }
+
+       
+         
+        
+       
+        label{color: rgba(14, 24, 24, 0.712); font: size 10pt;font-family:Arial, Helvetica, sans-serif ;}
+       
+       
+        
+           
+
+        </style>
+    <title>Cadastro</title>
+    <header>
+        <link rel="stylesheet" href="forms.css">
+      <div class="bordas" >
+      <div><dic>
+        <a href="paginaprincipal.html" >Home </a>
+      </div><div>
+        <a href="perfil.html" >Perfil </a>
+    </div><div>
+        <a href="cadastro.html">Cadastro </a>
+    </div>  <div>  
+        <a href="relaorio.html">Relatorio</a>
+      </div><div>
+        <a href="paginaprincipal.html">voltar</a>
+    </div>
+    </div>
+    </div>
+        
+        </div>
+</header>
+
+</head>
+<body>
+    <h1>Dados Cadastrais:</h1>
+        <form method="POST" action="validar.html">
+            <div class="contol">
+                <p class="colr">Dados pessoais:</p>
+             <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="nome do usuario"> 
+            </div>
+            <div class="contol">
+                <label for="Datadenascimento:" >Data de Nascimento:</label>
+                <input type="date" name="data de nascimento" id="data">
+            </div>
+            <div>
+                <div class="contol">
+                    <label class="colr">Genero:</label>
+                    <div>
+                        <input type="radio" name="genero" id="feminino" value="f">
+                        <label for="feminino">Feminino</label>
+                    
+                    
+                        <input type="radio" name="genero" id="masculino" value="m">
+                        <label for="masculino">masculino</label>
+
+                   
+                    
+                        <input type="radio" name="genero" id="naobinario" value="nb">
+                        <label for="naobinario">Não binario</label>
+                    
+                    
+                        <input type="radio" name="genero" id="naoinf" value="nr" >
+                        <label for="naoinf">Prefiro não Informar</label><br>
+                    </div>
+                 </div>
+                    
+                    
+
+                    <label class="colr">Estado Civil:</label><br>
+                    <div class="contol">
+                    <input type="radio" name="estadocivil" id="Solteiro" value="solteiro">
+                    <label for="solteiro">Solteiro(a)</label>
+                    
+                    
+                        <input type="radio" name="estadocivil" id="casado" value="casado">
+                        <label for="casado">Casado(a)</label>
+
+                   
+                    
+                        <input type="radio" name="estadocivil" id="viuvo" value="viuvo">
+                        <label for="viuvo">viuvo</label>
+
+                        <input type="radio" name="estadocivil" id="divorciado" value="divorciado">
+                        <label for="divorciado">divorciado</label>
+                    
+                    
+                        <input type="radio" name="estadocivil" id="naoinformar" value="naoinformar" >
+                        <label for="naoinformar">Prefiro não Informar</label><br>
+                    </div>
+                    <div class="contol">
+                        <label class="colr">N° dos Documentos:</label> <br>
+                        <label for="rg">RG:</label>
+                            <input type="text" name="rg" id="rg"placeholder="RG" >
+                        <label for="cpf">CPF:</label>
+                            <input type="number" name="cpf" id="cpf" placeholder="CPF">
+                            
+                    </div>
+                    <div class="contol">
+                        <label class="colr">Contato:</label><br>
+                        <label for="telefone">Telefone:</label>
+                            <input type="tel" name="telefone" id="telefone" placeholder="telefone">
+                            <label for="celular">celular:</label>
+                            <input type="tel" name="celular" id="celular"placeholder="celular" >
+                    
+                        <label for="email">E-mail:</label>
+                            <input type="email" name="email" id="email" placeholder="Email">
+                            
+                    </div>
+
+                    <div class="contol">
+                        <label class="colr">Dados Residenciais:</label><br>
+                        <label for="endereco">Endereço</label>
+                        <input type="text" name="endereco" id="endereco" placeholder="endereço">
+                        <label for="numero">N°:</label>
+                        <input type="number" name="numero" id="numero" placeholder="Numero da residencia">
+                    </div>
+
+                    
+
+
+                </div>
+                <input type="submit" value="Cadastrar">
+                <input type="reset" value="limpar">
+        </form>
+     
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="br" dir=auto >
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Cadastro</title>
+    <header>
+      
+
+        <a href="paginaprincipal.html" >Home |</a>
+
+        <a href="perfil.html" >Perfil |</a>
+
+        <a href="cadastro.html">Cadastro |</a>
+                
+        <a href="relaorio.html">Relatorio</a>
+        
+</header>
+
+</head>
+<body>
+    <h1>Dados Cadastrais</h1>
+        <form method="POST" action="validar.html">
+            <div>
+                <p>Dados pessoais:</p>
+             <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="nome do usuario"> 
+            </div>
+               
+                <div>
+                    <label>Genero:</label><br>
+                    <div>
+                    <input type="radio" name="genero" id="feminino" value="f">
+                    <label for="feminino">Feminino</label>
+                    
+                    
+                        <input type="radio" name="genero" id="masculino" value="m">
+                        <label for="masculino">masculino</label>
+
+                   
+                    
+                        <input type="radio" name="genero" id="naobinario" value="nb">
+                        <label for="naobinario">Não binario</label>
+                    
+                    
+                        <input type="radio" name="genero" id="naoinf" value="nr" >
+                        <label for="naoinf">Prefiro não Informar</label><br>
+                    </div>
+                    
+                    <div>
+                        <label for="Datadenascimento:">Data de Nascimento</label>
+                        <input type="date" name="data de nascimento" id="data">
+                    </div>
+
+                    <label>Estado Civil:</label><br>
+                    <div>
+                    <input type="radio" name="estadocivil" id="Solteiro" value="solteiro">
+                    <label for="solteiro">Solteiro(a)</label>
+                    
+                    
+                        <input type="radio" name="estadocivil" id="casado" value="casado">
+                        <label for="casado">Casado(a)</label>
+
+                   
+                    
+                        <input type="radio" name="estadocivil" id="viuvo" value="viuvo">
+                        <label for="viuvo">viuvo</label>
+
+                        <input type="radio" name="estadocivil" id="divorciado" value="divorciado">
+                        <label for="divorciado">divorciado</label>
+                    
+                    
+                        <input type="radio" name="estadocivil" id="naoinformar" value="naoinformar" >
+                        <label for="naoinformar">Prefiro não Informar</label><br>
+                    </div>
+                    <div>
+                        <label for="cpf">CPF:</label>
+                            <input type="number" name="cpf" id="cpf" placeholder="CPF">
+                            <label for="rg">RG:</label>
+                            <input type="text" name="rg" id="rg"placeholder="RG" ><br>
+                    </div>
+                    <div>
+                        <p>Contato:</p>
+                        <label for="telefone">Telefone:</label>
+                            <input type="tel" name="telefone" id="telefone" placeholder="telefone">
+                            <label for="celular">celular:</label>
+                            <input type="tel" name="celular" id="celular"placeholder="celular" ><br>
+                    </div>
+                    <div>
+                        <label for="email">E-mail:</label>
+                            <input type="email" name="email" id="email" placeholder="Email">
+                            
+                    </div>
+
+                    <div>
+                        <p>Dados Residenciais:</p>
+                        <label for="endereco">Endereço</label>
+                        <input type="text" name="endereco" id="endereco" placeholder="endereço">
+                        <label for="numero">N°:</label>
+                        <input type="number" name="numero" id="numero" placeholder="Numero da residencia">
+                    </div>
+
+                    
+
+
+                </div>
+                <input type="submit" value="Cadastrar">
+                <input type="reset" value="limpar">
+        </form>
+     <a href="paginaprincipal.html">voltar</a>
+</body>
+</html>

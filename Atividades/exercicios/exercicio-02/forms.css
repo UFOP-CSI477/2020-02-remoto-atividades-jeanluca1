@@ -1,0 +1,5 @@
+label{font-weight: bold;}
+p{font-weight: bold;}
+.contol{padding: 10px; border: 1px  rgb(241, 245, 241) ;}
+input[type="text"]{width: 60%;  }
+input[type="button"]{border-radius: 15px; background-color: rgb(9, 102, 145);}
