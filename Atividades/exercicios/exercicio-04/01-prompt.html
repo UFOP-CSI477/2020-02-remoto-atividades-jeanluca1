@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+            function dadosp(nome, datanas, end, cepp){
+                this.cep=nome;
+                this.nascimentos=datanas;
+                this.cep=cepp;
+                this.end=end;
+            }
+        function dadoss(){
+            const nome= window.prompt('Escreva seu nome completo')
+            const datanas= window.prompt('Escreva sua date de nascimento')
+            const end= window.prompt('Escreva seu endereço')
+            const cepp= window.prompt('escreva seu CEP')
+
+            
+        document.getElementById("nome").innerHTML=nome; 
+        document.getElementById("datanas").innerHTML=datanas; 
+        document.getElementById("end").innerHTML=end; 
+        document.getElementById("cepp").innerHTML=cepp; 
+
+
+        }
+
+
+    </script>
+    <div id="dados"> 
+        <div id="nome"></div>
+        <div id="datanas"></div>
+        <div id="end"></div>
+        <div id="cepp"></div>
+        
+    </div>
+    <div><div>
+
+        <label for="escreva">Clique no botao abaixo para continuar</label>
+        </div>
+        <input type="button" value="Dados" onclick="dadoss()">
+        </div>
+</body>
+</html>
