@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+    <meta charset="utf-8">
+		<title>Calculadora</title>
+
+		<link rel="stylesheet" href="stayles.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <style>
+        
+ .btn {
+        margin: 9px;
+        width: 60px;
+        height: 53px;
+        box-shadow: 2px 2px 2px rgb(23, 122, 72);
+      }
+
+      .calculadora {
+        background-color: #661c56;
+        border-radius: 10px;
+        box-shadow: 12px 10px 6px rgb(70, 44, 143);
+        margin-top: 40px;
+        border: double 9px rgb(158, 25, 136);
+        padding: 20px;
+        
+      }
+       
+      
+
+      .zero {
+        width: 136px;
+      }
+
+      .tela {
+        box-shadow: 2px 6px 270px rgb(211, 49, 189);
+        text-align: right;
+        font-size: 20px;
+        margin-top: 10px;
+        
+      }
+      .clear {
+        width: 215px;
+      }
+    </style>
+	</head>
+  <header>
+    
+  <nav class="navbar navbar-light" style="background-color: #a51042da;">
+    <div class="container-md">
+
+      <a  href="home.html" >Home </a>
+
+      <a href="corrida.html" >Corrida </a>
+
+      <a class="navbar-brand" href="calculadora.html">Calculadora </a>
+              
+      <a href="pix.html">Pix</a>
+
+      <a href="consumo.html">Consumo</a>
+        </div>
+        
+</header>
+
+  <body style="background-color: rgba(80, 49, 153, 0.301)"  id="conter" class="p-3 mb-2 bg-info text-white">
+    
+
+    <div class="container">
+      <div class="row">
+        <div class="col d-flex justify-content-center">
+          <br />
+
+          <div class="calculadora">
+            <input type="text" class="form-control tela" placeholder="0" disabled="disabled" id="tela"/>
+            
+            <div class="row">
+              <button type="button" class="btn btn-dark btn-lg clear font-weight-light " onclick="calculo('funcao','c')">C</button>
+              <button type="button" class="btn btn-dark btn-lg font-weight-light"  onclick="calculo('funcao','/')"id="/">/</button>
+              
+            </div>
+
+            <div class="row">
+              
+              <button type="button" class="btn btn-dark btn-lg font-weight-light" onclick="calculo('numero',7)" >7</button>
+              <button type="button" class="btn btn-dark btn-lg font-weight-light"onclick="calculo('numero',8)">8</button>
+              <button type="button" class="btn btn-dark btn-lg font-weight-light"onclick="calculo('numero',9)">9</button>
+              <button type="button" class="btn btn-dark btn-lg font-weight-light" onclick="calculo('funcao','*')"id="*">x</button> 
+              
+            </div>
+            
+            <div class="row">
+              <button type="button" class="btn btn-dark btn-lg font-weight-light"onclick="calculo('numero',4)">4</button>
+              <button type="button" class="btn btn-dark btn-lg font-weight-light"onclick="calculo('numero',5)">5</button>
+              <button type="button" class="btn btn-dark btn-lg font-weight-light"onclick="calculo('numero',6)">6</button>
+              <button type="button" class="btn btn-dark btn-lg font-weight-light" onclick="calculo('funcao','-')"id="-">-</button>
+              
+            </div>
+
+            <div class="row">
+              <button type="button" class="btn btn-dark btn-lg font-weight-light"onclick="calculo('numero',1)">1</button>
+              <button type="button" class="btn btn-dark btn-lg font-weight-light"onclick="calculo('numero',2)">2</button>
+              <button type="button" class="btn btn-dark btn-lg font-weight-light"onclick="calculo('numero',3)">3</button>
+              <button type="button" class="btn btn-dark btn-lg font-weight-light" onclick="calculo('funcao','+')"id="+">+</button>
+              
+            </div>
+
+            <div class="row" >
+              <button type="button" class="btn btn-dark zero btn-lg font-weight-light"onclick="calculo('numero',0)">0</button>
+              <button type="button" class="btn btn-dark btn-lg font-weight-light"onclick="calculo('funcao','.')"id=".">.</button>
+              <button type="button" class="btn btn-dark btn-lg igual"onclick="calculo('funcao','=')">=</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>    
+  </body>	
+ <script>
+  function calculo(operador,tecla){
+   
+  
+  if (operador=='funcao'){
+    if (tecla=='c') {
+      document.getElementById('tela').value='' 
+      document.getElementById("+").disabled = false
+      document.getElementById("-").disabled = false
+      document.getElementById("*").disabled = false
+      document.getElementById("/").disabled = false
+      document.getElementById(".").disabled = false
+           
+    }
+
+    if (tecla=='/'|| tecla=='*'|| tecla=='-'|| tecla=='+') {
+      
+      
+      
+      document.getElementById('tela').value+=tecla
+      document.getElementById("+").disabled = true
+      document.getElementById("-").disabled = true
+      document.getElementById("*").disabled = true
+      document.getElementById("/").disabled = true
+      document.getElementById(".").disabled = false
+      
+      
+        
+      
+    }
+    if (tecla==='.') {
+      document.getElementById('tela').value+=tecla
+      document.getElementById("+").disabled = true
+      document.getElementById("-").disabled = true
+      document.getElementById("*").disabled = true
+      document.getElementById("/").disabled = true
+      document.getElementById(".").disabled = true
+
+
+      
+    }
+
+    if (tecla=='=') {
+      var valortotal =eval(document.getElementById('tela').value)
+        document.getElementById('tela').value=valortotal
+
+
+
+      //console.log(eval(valortotal))
+      
+    }
+    
+
+  }
+  else if(operador=='numero') {
+    
+    document.getElementById('tela').value+=tecla
+    //console.log(operador,tecla)
+
+
+    document.getElementById("+").disabled = false
+      document.getElementById("-").disabled = false
+      document.getElementById("*").disabled = false
+      document.getElementById("/").disabled = false
+     
+
+  }  
+  
+  }
+   
+
+ </script>
+</html>

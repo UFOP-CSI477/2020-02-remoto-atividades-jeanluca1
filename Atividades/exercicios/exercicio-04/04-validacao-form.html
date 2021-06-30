@@ -9,33 +9,35 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
         <style type="text/CSS">
         .colr{color: rgb(9, 7, 94);font-size: 12pt;}
+        .msgerro{color: rgb(255, 30, 0); font-size: 9pt;}
         
         </style>
 
 
 <nav class="navbar navbar-light" style="background-color: #10a599da;">
             <div class="container-md">
-        <a  href="paginaprincipal.html" >Home </a>
+        
 
-        <a href="perfil.html" >Perfil </a>
-
-        <a class="navbar-brand" href="cadastro.html">Cadastro </a>
-                
-        <a href="relaorio.html">Relatorio</a>
-        <a href="paginaprincipal.html">voltar</a>
-            </div>
+        <a class="navbar-brand" href="">Cadastro </a>
+              
+    
+       
+       
 </header>
 
 </head>
+
 <body class="colr">
     <h1>Dados Cadastrais</h1>
-        <form method="POST" action="validar.html">
+        <form name= "dados" method="POST" action="validar.html"  id="frmcadastro">
             <div>
                 <p>Dados pessoais:</p>
                 <div class="input-group">
                     <span class="input-group-text">Nome/Sobrenome</span>
                     <input type="text" name="nome" id="nome" placeholder="Nome do usuario"class="form-control"> 
+                    <span class='msgerro msg-nome'></span>
                     <input type="text" name="snome" id="snome" placeholder="Sobrenome"class="form-control"> 
+                    <span class='msgerro msg-snome'></span>
                   </div></div>
                
                 <div>
@@ -63,6 +65,7 @@
                     <div class="input-group">
                         <label for="Datadenascimento:" class="input-group-text">Data de Nascimento</label>
                         <input type="date" name="data de nascimento" id="data">
+                        <span class='msgerro msg-data'></span>
                     </div></div>
 
                     <label>Estado Civil:</label><br>
@@ -80,7 +83,7 @@
                         <label for="viuvo" class="form-check-label">viuvo</label>
                     </div><div class="form-check" >
                         <input type="radio" name="estadocivil" id="divorciado" value="divorciado" class="form-check-input">
-                        <label for="divorciado"  class="form-check-label">divorciado</label>
+                        <label for="divorciado"  class="form-check-label">Divorciao</label>
                     </div> <div class="form-check" >
                     
                         <input type="radio" name="estadocivil" id="naoinformar" value="naoinformar"  class="form-check-input">
@@ -97,10 +100,13 @@
                         <div class="input-group">
                         <label for="telefone" class="input-group-text" >Telefone:</label>
                             <input type="tel" name="telefone" id="telefone" placeholder="telefone">
-                            <label for="celular" class="input-group-text">celular:</label>
+                            <span class='msgerro msgt-elefone'></span>
+                            <label for="celular" class="input-group-text">celular:</label>                            
                             <input type="tel" name="celular" id="celular"placeholder="celular" >
-                            <label for="email" class="input-group-text">E-mail:</label>
+                            <span class='msgerro msg-celular'></span>
+                            <label for="email" class="input-group-text">E-mail:</label>                           
                             <input type="email" name="email" id="email" placeholder="Email">
+                            <span class='msgerro msg-email'></span>
                     </div></div>
                    
                     <div> <p>Dados Residenciais:</p>
@@ -108,8 +114,10 @@
                        
                         <label for="endereco" class="input-group-text">Endereço</label>
                         <input type="text" name="endereco" id="endereco" placeholder="endereço"class="form-control">
+                        <span class='msgerro msgensereco'></span>
                         <label for="numero"class="input-group-text">N°:</label>
                         <input type="number" name="numero" id="numero" placeholder="Numero da residencia"class="form-control">
+                        <span class='msgerro msgnumero'></span>
                         <label for="complemento" class="input-group-text">complemento</label>
                         <input type="text" name="endereco" id="complemento" placeholder="complemento"class="form-control">
 
@@ -120,10 +128,13 @@
 
                 </div>
                 <div>
-                <input type="submit" value="Cadastrar" class="btn btn-primary">
+                <input type="submit" value="Cadastrar" class="btn btn-primary" >
                 <input type="reset" value="limpar" class="btn btn-danger">
             </div>
+
+            <script src="validar.js"></script>
         </form>
-     
+      
 </body>
+
 </html>
