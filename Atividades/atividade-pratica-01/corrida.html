@@ -7,8 +7,8 @@
     </head>
     <body>
             <header>
-                <title>Home</title> 
-                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+                <title>Corrida</title> 
+                
                 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">    
                 <link rel="stylesheet" href="stayles.css">
                 <nav class="navbar navbar-light" style="background-color: #a51042da;">
@@ -29,36 +29,36 @@
        
             
 
-        <form method="POST" action="validar.html">
-            <div>
-                <p>Dados pessoais:</p>
-                <class class="input-group">
-                    <span class="input-group-text">Nome</span>
-                    <input type="text" name="nome" id="nome" placeholder="Nome do usuario"class="form-control"> 
-                    
-                                   
-                    <span class="input-group-text">Tempo em Segundos</span>
-                    <input type="number" name="nome" id="tempo" placeholder="tempo"class="form-control"> 
-                    
-                  </div>
-                
-                
-                
-                
-                </div>            
-                                    
-                <div>
-                <input type="submit" value="Cadastrar" class="btn btn-primary">
-                <input type="reset" value="limpar" class="btn btn-danger">
-            </div>
-        </form>
-
-        
-                    
+            
+            
+            <form method="POST" action="">
+                <p class="text-white bg-dark">Dados da corrida:</p>
+                <div> 
+                  
+                  <div class="input-group " >
                        
-     </div>
-           
-           
+                    <label for="nome" class="input-group-text">nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="nome do piloto"class="form-control">
+                    <label for="numero"class="input-group-text">N°:</label>
+                    <input type="number" name="posicao" id="posicao" placeholder="posiçao da largada"class="form-control">
+                    <label for="tempo de chegada" class="input-group-text">tempo em chegada (seg)</label>
+                    <input type="number" name="tempo" id="tempo" placeholder="tempo em chegada em Segundos"class="form-control">
+                   
+                    </div>
+                </div>
+                                    
+                <div><br>
+                    
+                    <input type="submit" value="Cadastrar" class="btn btn-primary">
+                  
+                    <input type="submit" value="Finalizar" class="btn btn-success">
+                    <input type="reset" value="limpar" class="btn btn-danger">
+                </div>
+                
+    
+            
+        </form>    
+                
 
 
     </body>

@@ -1,6 +1,6 @@
 
 
-var form = document.getElementById("frmcadastro"); ;
+var form = document.getElementById("frmcadastro"); 
 
 
 	
@@ -32,7 +32,7 @@ function validacadastro(evt){
 camponome = document.querySelector('.msgnome');
 if(nome.value == ""){
     camponome.innerHTML = "preencha o campo nome";
-    camponome.style.display = 'block';
+    camponome.nome.style = 'block';
     contErro += 1;
 }else{
     cnome.style.display = 'none';
