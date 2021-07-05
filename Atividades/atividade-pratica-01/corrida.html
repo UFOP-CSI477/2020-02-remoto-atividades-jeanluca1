@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
     </head>
-    <body>
+    <body style="background-color: #cde3e9da;">
             <header>
                 <title>Corrida</title> 
                 
@@ -22,14 +22,12 @@
                 <a href="pix.html">Pix</a>
 
                 <a href="consumo.html">Consumo</a>
+                <a href="referencias.html">Referencias</a>
 
 
                     </div>
         </header>
-       
-            
-
-            
+                              
             
             <form method="POST" action="">
                 <p class="text-white bg-dark">Dados da corrida:</p>
@@ -39,8 +37,8 @@
                        
                     <label for="nome" class="input-group-text">nome:</label>
                     <input type="text" name="nome" id="nome" placeholder="nome do piloto"class="form-control">
-                    <label for="numero"class="input-group-text">N°:</label>
-                    <input type="number" name="posicao" id="posicao" placeholder="posiçao da largada"class="form-control">
+                   <!-- <label for="numero"class="input-group-text">N°:</label>
+                    <input type="number" name="posicao" id="posicao" placeholder="posiçao da largada"class="form-control">-->
                     <label for="tempo de chegada" class="input-group-text">tempo em chegada (seg)</label>
                     <input type="number" name="tempo" id="tempo" placeholder="tempo em chegada em Segundos"class="form-control">
                    
@@ -49,18 +47,46 @@
                                     
                 <div><br>
                     
-                    <input type="submit" value="Cadastrar" class="btn btn-primary">
-                  
-                    <input type="submit" value="Finalizar" class="btn btn-success">
-                    <input type="reset" value="limpar" class="btn btn-danger">
+                    <input type="button" value="Cadastrar" class="btn btn-primary" onclick="novopiloto()" id="cadastro">                  
+                    <input type="button" value="resultado" class="btn btn-success" onclick="resultFinal()"id="result">
+                    <input type="reset" value="Corrigir" class="btn btn-warning" id="corrigir">
+                    <input type="button" value="Novo" class="btn btn-danger" onclick="window.location.reload()">
                 </div>
-                
-    
+                    
             
-        </form>    
-                
+        </form>                 
+        <br>
+      <table id="inicio" class="table table-bordered border-primary table-hover ">
+        <thead>
+          <tr class="table-primary">
+            <th>Largada</th>
+            <th>Competidor(a)</th>
+            <th>Tempo(s)</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+    <br>
+      <div>
+      <table id="resultado"class= "table table-bordered border-primary table-hover">
+        <thead>
+          <tr class="table-danger">
+            <th>Posição</th>
+            <th>Largada</th>
+            <th>Competidor(a)</th>
+            <th>Tempo(s)</th>
+            <th>Resultado</th>
+          </tr>
+        </thead>
+      </table>
+
+    </div> 
+
+
+
 
 
     </body>
+    <script src="corrida.js"></script>
 
 </html>

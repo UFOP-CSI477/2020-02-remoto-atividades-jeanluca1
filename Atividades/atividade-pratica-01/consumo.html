@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <body style="background-color: #cde3e9da;">
+            <header>
+                <title>Consumo</title> 
+                
+                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">    
+                <link rel="stylesheet" href="stayles.css">
+                <nav class="navbar navbar-light" style="background-color: #a51042da;">
+                    <div class="container-md">
+                <a href="home.html" >Home </a>
+
+                <a  href="corrida.html" >Corrida </a>
+        
+                <a href="calculadora.html">Calculadora </a>
+                        
+                <a href="pix.html">Pix</a>
+
+                <a class="navbar-brand" href="consumo.html">Consumo</a>
+                <a href="referencias.html">Referencias</a>
+
+                    </div>
+        </header>
+       
+            
+
+            
+            
+            <form name="consu" >
+                <p class="text-white bg-dark">Consumo de combustivel:</p>
+                <div> 
+                  
+                  <div class="input-group " >
+                       
+                   
+                    <label for="km"class="input-group-text">Quantidade de quilômetros rodados:</label>
+                    <input type="number" name="km" id="km" placeholder="Quilômetros rodados "class="form-control">
+                    <label for="litros" class="input-group-text">Litros de combustivel</label>
+                    <input type="number" name="litros" id="litros" placeholder="litros de combustivel"class="form-control">
+                    <input type="button" value=" Imprimir" class="btn btn-outline-info " onclick="window.print()" >
+                    </div>
+                </div>
+                                    
+                <div><br>
+                    
+                    <input type="button" value="Cadastrar" class="btn btn-primary" onclick="consum()" id="consu">                 
+                    <input type="button" value="Finalizar" class="btn btn-success" onclick="resultado()"id="resultad">
+                    
+                    <input type="button" value="Novo" class="btn btn-danger" onclick="window.location.reload()">
+                   
+                    
+                    
+                </div>
+                
+                <script src="consumo.js"></script>
+            
+        </form> 
+        <br> 
+        <div> 
+        <table id="media" table class="table table-bordered border-primary table-hover">
+            <thead>
+              <tr>
+                <th>Quantidade de Combustivel:</th>
+                <th>Quantidade de quilômetro rodados:</th>
+                <th>Desempenho em quilômetro por litros(km/l):</th>
+              </tr>
+
+            </thead>
+
+          </table>
+          </div>
+
+          <div >
+            <table id="resultado" table class="table table-bordered border-primary table-hover">
+              <thead>
+                <tr>
+                  <th>Quantidade total de combustível utilizada:</th>
+                  <th>Quantidade total de quilômetro rodados:</th>
+                  <th>Média de consumo de combustível:</th>
+                  <th>Média de quilômetro rodados:</th>
+                  <th>Média de desempenho em quilômetro por litros(km/l):</th>
+                </tr>
+              </thead>
+            </table>
+            </div>
+ 
+                
+
+
+
+
+
+
+    </body>
+
+</html>
