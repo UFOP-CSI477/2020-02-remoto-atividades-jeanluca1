@@ -166,7 +166,7 @@ function validarcpf() {
   if ( validarnome(nome) && validarsnome() && validarData(data) && validarcpf() && validarrg() && validartel() && validarcel()
          && validarEmail(email) && validarcpf() && validarendereco() && validarnumero() ) {
     
-
+        
 
 
   }}
