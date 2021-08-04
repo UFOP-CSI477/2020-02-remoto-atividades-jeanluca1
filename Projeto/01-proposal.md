@@ -34,9 +34,9 @@ Fretes  ou devoluções por conta dos usuários.
 <!-- Construir alguns protótipos para a aplicação, disponibilizá-los no Github e descrever o que foi considerado. //-->
 ### 4. Protótipo
 
- ![Alt text]("./imgs/prot1.png?raw=true "Protótipo")
-  ![Alt text]("./imgs/prot2.png?raw=true "Protótipo2") 
-  ![Alt text]("./imgs/prot04.png?raw=true "Protótipo3")
+ ![Protótipo 1]("./imgs/prot1.png?raw=true "Protótipo")
+  ![Protótipo 2]("./imgs/prot2.png?raw=true "Protótipo2") 
+  ![Protótipo 3]("./imgs/prot04.png?raw=true "Protótipo3")
 
 ### 5. Referências
 
